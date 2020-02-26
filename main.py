@@ -1,335 +1,287 @@
-import pyautogui as pyauto
+"""Control Firefox through shortcuts"""
 
-class Search():
+import pyautogui as auto
+
+
+class Search:
     """Search commands for firefox"""
     def __init__(self):
-        self.SearchKeyword = pyauto
+        self.search_keyword = auto
 
-    @staticmethod
     def find(self):
         """find in the document"""
-        self.SearchKeyword.hotkey('Ctrl', 'F')
+        self.\
+            search_keyword.hotkey('Ctrl', 'F')
 
-    @staticmethod
     def find_again(self):
         """Find Again"""
-        self.SearchKeyword.hotkey('F3')
+        self.search_keyword.hotkey('F3')
 
-    @staticmethod
     def find_previous(self):
         """Find Previous"""
-        self.SearchKeyword.hotkey('Shift', 'F3')
- 
-    @staticmethod
+        self.search_keyword.hotkey('Shift', 'F3')
+
     def quick_find_within_link_text(self):
         """Quick Find within link-text only"""
-        self.SearchKeyword.hotkey("'")
-   
-    @staticmethod
+        self.search_keyword.hotkey("'")
+
     def quick_find(self):
         """Quick Find"""
-        self.SearchKeyword.hotkey('/')
+        self.search_keyword.hotkey('/')
 
-    @staticmethod
     def close_find(self):
         """Close the Find or Quick Find bar"""
-        self.SearchKeyword.hotkey('Esc')
+        self.search_keyword.hotkey('Esc')
 
-    @staticmethod
     def focus_search_bar(self):
         """Focus Search bar"""
-        self.SearchKeyword.hotkey('Ctrl', 'K')
+        self.search_keyword.hotkey('Ctrl', 'K')
 
-    @staticmethod
     def change_default_engine(self):
         """Change the Default Search Engine"""
-        self.SearchKeyword.hotkey('Ctrl', 'up')
+        self.search_keyword.hotkey('Ctrl', 'up')
 
-    @staticmethod
     def view_menu(self):
         """View menu to switch, add or manage search engines"""
-        self.SearchKeyword.hotkey('Alt', 'down')
+        self.search_keyword.hotkey('Alt', 'down')
         
           
-class Navigation():
+class Navigation:
     """Firefox Browser navigation class"""
     def __init__(self):
-        self.navBrowser = pyauto
+        self.nav_browser = auto
 
-    @staticmethod
     def back(self):
         """Go back"""
-        self.navBrowser.hotkey('Alt', 'left')
+        self.nav_browser.hotkey('Alt', 'left')
 
-    @staticmethod
     def forward(self):
         """Go forward"""
-        self.navBrowser.hotkey('Alt', 'right')
+        self.nav_browser.hotkey('Alt', 'right')
 
-    @staticmethod
     def home(self):
         """go to the home web page"""
-        self.navBrowser.hotkey('Alt', 'Home')
+        self.nav_browser.hotkey('Alt', 'Home')
 
-    @staticmethod
     def open_file(self):
         """Open folder"""
-        self.navBrowser.hotkey('Ctrl', 'o')
+        self.nav_browser.hotkey('Ctrl', 'o')
 
-    @staticmethod
     def reload(self):
         """Reload page """
-        self.navBrowser.hotkey('F5') or pygui.hotkey('Ctrl', 'R')
+        self.nav_browser.hotkey('F5')
 
-    @staticmethod
     def reload_cache(self):
         """Reload page and cache"""
-        self.navBrowser.hotkey('Ctrl', 'F5') or pygui.hotkey('Ctrl', 'Shift', 'R')
+        self.nav_browser.hotkey('Ctrl', 'F5')
 
-    @staticmethod
     def stop(self):
         """Stop the requests"""
-        self.navBrowser.hotkey('Esc')
+        self.nav_browser.hotkey('Esc')
         
         
-class Edit():
+class Edit:
     """Contains command to edit the text in web page"""
     def __init__(self):
-        self.EditKeyboard = pygui
+        self.edit_keyboard = auto
 
-    @staticmethod
     def copy(self):
         """Copy the selected contend"""
-        self.EditKeyboard.hotkey('Ctrl', 'C')
+        self.edit_keyboard.hotkey('Ctrl', 'C')
 
-    @staticmethod
     def cut(self):
         """Cut the selected content"""
-        self.EditKeyboard.hotkey('Ctrl', 'X')
+        self.edit_keyboard.hotkey('Ctrl', 'X')
 
-    @staticmethod
     def delete(self):
         """Deletes when the contents is selected"""
-        self.EditKeyboard.hotkey('Del')
+        self.edit_keyboard.hotkey('Del')
 
-    @staticmethod
     def delete_left_world(self):
         """Delete the world on the left"""
-        self.EditKeyboard.hotkey('Ctrl', 'Backspace')
+        self.edit_keyboard.hotkey('Ctrl', 'Backspace')
 
-    @staticmethod
     def delete_right_world(self):
         """Delete the word on the right"""
-        self.EditKeyboard.hotkey('Ctrl', 'Del')
+        self.edit_keyboard.hotkey('Ctrl', 'Del')
 
-    @staticmethod
     def go_one_world_left(self):
         """Move the cursor one word left"""
-        self.EditKeyboard.hotkey('Ctrl', '+', 'Left')
+        self.edit_keyboard.hotkey('Ctrl', '+', 'Left')
 
-    @staticmethod
     def go_one_world_right(self):
         """Move cursor one word right"""
-        self.EditKeyboard.hotkey('Ctrl', '+', 'Right')
+        self.edit_keyboard.hotkey('Ctrl', '+', 'Right')
 
-    @staticmethod
     def go_line_beginning(self):
         """Go to the beginning of the line"""
-        self.EditKeyboard.hotkey('Home')
+        self.edit_keyboard.hotkey('Home')
 
-    @staticmethod
     def go_line_end(self):
         """Go to the end of the line"""
-        self.EditKeyboard.hotkey('End')
+        self.edit_keyboard.hotkey('End')
 
-    @staticmethod
     def go_text_beginning(self):
         """Go to the beginning of the text"""
-        self.EditKeyboard.hotkey('Ctrl', 'Home')
+        self.edit_keyboard.hotkey('Ctrl', 'Home')
 
-    @staticmethod
     def go_end_text(self):
         """Go to the end of the text"""
-        self.EditKeyboard.hotkey('Ctrl', 'End')
+        self.edit_keyboard.hotkey('Ctrl', 'End')
 
-    @staticmethod
     def paste(self):
         """Past what ever is in clipboard"""
-        self.EditKeyboard.hotkey('Ctrl', 'V')
+        self.edit_keyboard.hotkey('Ctrl', 'V')
 
-    @staticmethod
     def paste_as_plain(self):
         """Paste as plain"""
-        self.EditKeyboard.hotkey('Ctrl', 'Shift', 'V')
+        self.edit_keyboard.hotkey('Ctrl', 'Shift', 'V')
 
-    @staticmethod
     def redo(self):
         """Redo action"""
-        self.EditKeyboard.hotkey('Ctrl', 'Shift', 'Z')
+        self.edit_keyboard.hotkey('Ctrl', 'Shift', 'Z')
 
-    @staticmethod
     def select_all(self):
         """Select all content"""
-        self.EditKeyboard.hotkey('Ctrl', 'A')
+        self.edit_keyboard.hotkey('Ctrl', 'A')
 
-    @staticmethod
     def undo(self):
         """Undo action"""
-        self.EditKeyboard.hotkey('Ctrl', 'Z')
+        self.edit_keyboard.hotkey('Ctrl', 'Z')
 
 
-class Page():
+class Page:
+    """working os the content of the page"""
+
     def __init__(self):
-    """Shortcuts working with a web page"""
-        self.pageContrl = pyauto
+        """Shortcuts working with a web page"""
+        self.page_control = auto
 
-    @staticmethod
     def focus_next(self):
         """Go to next focus"""
-        self.pageContrl.hotkey('Tab')
+        self.page_control.hotkey('Tab')
 
-    @staticmethod
     def previous_focus(self):
         """Go to previous focus"""
-        self.pageContrl.hotkey('Shift', 'Tab')
+        self.page_control.hotkey('Shift', 'Tab')
 
-    @staticmethod
     def go_down(self):
         """Go down the page"""
-        self.pageContrl.hotkey('Down') or pygui.hotkey('Space')
+        self.page_control.hotkey('Down')
 
-    @staticmethod
     def go_up(self):
         """Go up the page"""
-        self.pageContrl.hotkey('Up') or pygui.hotkey('Shift', 'Space')
+        self.page_control.hotkey('Up')
 
-    @staticmethod
     def go_bottom(self):
         """Go to the bottom of the page"""
-        self.pageContrl.hotkey('End')
+        self.page_control.hotkey('End')
 
-    @staticmethod
     def go_top(self):
         """Go to the top of page"""
-        self.pageContrl.hotkey('Home')
+        self.page_control.hotkey('Home')
 
-    @staticmethod
     def next_frame(self):
         """Go to next frame"""
-        self.pageContrl.hotkey('F6')
+        self.page_control.hotkey('F6')
 
-    @staticmethod
     def previous_frame(self):
         """Go to previous frame"""
-        self.pageContrl.hotkey('Shift', 'F6')
+        self.page_control.hotkey('Shift', 'F6')
 
-    @staticmethod
     def print_page(self):
         """Print the page"""
-        self.pageContrl.hotkey('Ctrl', 'P')
+        self.page_control.hotkey('Ctrl', 'P')
 
-    @staticmethod
     def save_focused_link(self):
         """Save the focused link it works when browser.altClickSave is set to true"""
-        self.pageContrl.hotkey('Alt', 'Enter')
+        self.page_control.hotkey('Alt', 'Enter')
 
-    @staticmethod
     def save_page_as(self):
         """Save the page as, yuo chose the name and destination to save it"""
-        self.pageContrl.hotkey('Ctrl', 's')
+        self.page_control.hotkey('Ctrl', 's')
 
-    @staticmethod
     def zoom_in(self):
         """Zoom in the page"""
-        self.pageContrl.hotkey('Ctrl', '+')
+        self.page_control.hotkey('Ctrl', '+')
 
-    @staticmethod
     def zoom_out(self):
         """Zoom out the page"""
-        self.pageContrl.hotkey('Ctrl', '-')
+        self.page_control.hotkey('Ctrl', '-')
 
-    @staticmethod
     def reset_zoom(self):
         """Reset the zoom to 0"""
-        self.pageContrl.hotkey('Ctrl', '0')
+        self.page_control.hotkey('Ctrl', '0')
 
         
-class Tools():
+class Tools:
     """Working with the borwser's tool box"""
     def __init__(self):
-        self.ToolBox = pyauto
-    
-    @staticmethod
+        self.tool_box = auto
+
     def downloads(self):
         """open downloads"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'Y')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'Y')
 
-    @staticmethod
     def add_ons(self):
         """open add ons"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'A')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'A')
 
-    @staticmethod
-    def developer_toos(self):
+    def developer_tools(self):
         """open tool box"""
-        self.ToolBox.hotkey('F12')
+        self.tool_box.hotkey('F12')
 
-    @staticmethod
     def web_console(self):
         """open web console"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'K')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'K')
 
-    @staticmethod
     def inspector(self):
         """open inspector"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'C')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'C')
 
-    @staticmethod
     def debugger(self):
         """open debugger"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'S')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'S')
 
-    @staticmethod
     def style_editor(self):
         """open style editor tool box"""
-        self.ToolBox.hotkey('Shift', 'F7')
+        self.tool_box.hotkey('Shift', 'F7')
 
-    @staticmethod
     def profiler(self):
         """open profiler tool box"""
-        self.ToolBox.hotkey('Shift', 'F5')
+        self.tool_box.hotkey('Shift', 'F5')
 
-    @staticmethod
     def network(self):
         """open network tool box"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'E')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'E')
 
-    @staticmethod
     def developer(self):
         """open developer tool box"""
-        self.ToolBox.hotkey('Shift', 'F2')
+        self.tool_box.hotkey('Shift', 'F2')
 
-    @staticmethod
     def design_view(self):
         """open design view"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'M')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'M')
 
-    @staticmethod
     def scratchpad(self):
         """open scratch pad"""
-        self.ToolBox.hotkey('Shift', 'F4')
+        self.tool_box.hotkey('Shift', 'F4')
 
-    @staticmethod
     def page_source(self):
         """open the source code in new tab"""
-        self.ToolBox.hotkey('Ctrl', 'U')
+        self.tool_box.hotkey('Ctrl', 'u')
 
-    @staticmethod
     def console(self):
         """"open browser console"""
-        self.ToolBox.hotkey('Ctrl', 'Shift', 'J')
+        self.tool_box.hotkey('Ctrl', 'Shift', 'j')
 
-    @staticmethod
     def page_info(self):
         """view page info"""
-        self.ToolBox.hotkey('Ctro', 'I')
+        self.tool_box.hotkey('Ctrl', 'I')
+
+
+if __name__ == '__main__':
+    firefox = Tools()
+    import time
+    time.sleep(8)
+    firefox.console()
