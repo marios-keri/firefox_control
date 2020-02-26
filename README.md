@@ -3,6 +3,10 @@ Firefox control through shortcut
 # DESCRIPTION
 This program allows you to automate the boring stuff by using the power of shortcut keys.
 This program is designed to work just for Linux, been tested under Ubuntu 19.10
+It can be used to contorl any program that uses shortcutes. 
+
+NOTE: In the current version of the software the browser needs to be initialized by the user, 
+and then use this program to create the shortcuts you need to get the job done.
 
 Allows you to automate:
 - Fill forms
