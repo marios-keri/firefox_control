@@ -34,11 +34,11 @@ Almost anything a human can do with a browser the firefox_control can do.
    browser = firefox_control.main()
    navigation = borwser.Navigation()
    
-   navigation.back()
-   navigation.forward()
-   navigation.home()
-   navigation.open_file()
-   navigation.reload()
+   navigation.back
+   navigation.forward
+   navigation.home
+   navigation.open_file
+   navigation.reload
    
 ```
 # USAGE COMBINATIONS WITH TIME MODULE
@@ -48,15 +48,15 @@ Almost anything a human can do with a browser the firefox_control can do.
    browser = firefox_control.main()
    navigation = borwser.Navigation()
    
-   navigation.back()
+   navigation.back
    time.sleep(1)             # 
-   navigation.forward()
+   navigation.forward
    time.sleep(1) 
-   navigation.home()
+   navigation.home
    time.sleep(1) 
-   navigation.open_file()
+   navigation.open_file
    time.sleep(1) 
-   navigation.reload()
+   navigation.reload
 
 # NOTE
 The shortcuts only work if they are not used by the desktop environment or window anager. 
