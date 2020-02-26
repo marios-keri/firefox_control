@@ -4,9 +4,16 @@ Firefox control through shortcut
 This program allows you to automate the boring stuff by using the power of shortcut keys.
 This program is designed to work just for Linux, been tested under Ubuntu 19.10
 It can be used to contorl any program that uses shortcutes. 
+Future releases will contain:
+- Bookmarks
+- Histor
+- Windows and Tabs
 
 NOTE: In the current version of the software the browser needs to be initialized by the user, 
 and then use this program to create the shortcuts you need to get the job done.
+It is a good idea to use the "time" module form the python standard library to separate the function shortcut 
+between each other.
+
 
 Allows you to automate:
 - Fill forms
