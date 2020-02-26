@@ -8,6 +8,7 @@ Future releases will contain:
 - Bookmarks
 - Histor
 - Windows and Tabs
+- Add timeing in the body of the function.
 
 NOTE: In the current version of the software the browser needs to be initialized by the user, 
 and then use this program to create the shortcuts you need to get the job done.
@@ -28,7 +29,34 @@ Almost anything a human can do with a browser the firefox_control can do.
 
 
 # USAGE 
-
+```import firefox_control
+   
+   browser = firefox_control.main()
+   navigation = borwser.Navigation()
+   
+   navigation.back()
+   navigation.forward()
+   navigation.home()
+   navigation.open_file()
+   navigation.reload()
+   
+```
+# USAGE COMBINATIONS WITH TIME MODULE
+```import firefox_control
+   import time
+   
+   browser = firefox_control.main()
+   navigation = borwser.Navigation()
+   
+   navigation.back()
+   time.sleep(1)             # 
+   navigation.forward()
+   time.sleep(1) 
+   navigation.home()
+   time.sleep(1) 
+   navigation.open_file()
+   time.sleep(1) 
+   navigation.reload()
 
 # NOTE
 The shortcuts only work if they are not used by the desktop environment or window anager. 
