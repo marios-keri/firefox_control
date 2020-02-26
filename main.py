@@ -252,3 +252,84 @@ class Page():
     def reset_zoom(self):
         """Reset the zoom to 0"""
         self.pageContrl.hotkey('Ctrl', '0')
+
+        
+class Tools():
+    """Working with the borwser's tool box"""
+    def __init__(self):
+        self.ToolBox = pyauto
+    
+    @staticmethod
+    def downloads(self):
+        """open downloads"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'Y')
+
+    @staticmethod
+    def add_ons(self):
+        """open add ons"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'A')
+
+    @staticmethod
+    def developer_toos(self):
+        """open tool box"""
+        self.ToolBox.hotkey('F12')
+
+    @staticmethod
+    def web_console(self):
+        """open web console"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'K')
+
+    @staticmethod
+    def inspector(self):
+        """open inspector"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'C')
+
+    @staticmethod
+    def debugger(self):
+        """open debugger"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'S')
+
+    @staticmethod
+    def style_editor(self):
+        """open style editor tool box"""
+        self.ToolBox.hotkey('Shift', 'F7')
+
+    @staticmethod
+    def profiler(self):
+        """open profiler tool box"""
+        self.ToolBox.hotkey('Shift', 'F5')
+
+    @staticmethod
+    def network(self):
+        """open network tool box"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'E')
+
+    @staticmethod
+    def developer(self):
+        """open developer tool box"""
+        self.ToolBox.hotkey('Shift', 'F2')
+
+    @staticmethod
+    def design_view(self):
+        """open design view"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'M')
+
+    @staticmethod
+    def scratchpad(self):
+        """open scratch pad"""
+        self.ToolBox.hotkey('Shift', 'F4')
+
+    @staticmethod
+    def page_source(self):
+        """open the source code in new tab"""
+        self.ToolBox.hotkey('Ctrl', 'U')
+
+    @staticmethod
+    def console(self):
+        """"open browser console"""
+        self.ToolBox.hotkey('Ctrl', 'Shift', 'J')
+
+    @staticmethod
+    def page_info(self):
+        """view page info"""
+        self.ToolBox.hotkey('Ctro', 'I')
