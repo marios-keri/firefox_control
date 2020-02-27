@@ -10,8 +10,7 @@ class Search:
 
     def find(self):
         """find in the document"""
-        self.\
-            search_keyword.hotkey('Ctrl', 'F')
+        self.search_keyword.hotkey('Ctrl', 'F')
 
     def find_again(self):
         """Find Again"""
@@ -279,7 +278,7 @@ class Tools:
         """view page info"""
         self.tool_box.hotkey('Ctrl', 'I')
 
-
+# one test case
 if __name__ == '__main__':
     firefox = Tools()
     import time
